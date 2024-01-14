@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broomers India Task</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="main">
+        <div class="content_section">
+            <div class="logo"><span>&#9992;</span></div>
+            <div class="content_box">
+                <div class="content_box_title">Altitude Air</div>
+                <div class="content_box_underline"></div>
+                <div class="content_box_para">We insure to take care of your well-being is taken care of while traveling
+                    with us. Boasting top in class fleet inventory and a 5 star approval for our in-flight experience.
+                    you know you're getting the best from Altitude Air with no altitued.</div>
+            </div>
+        </div>
+        <div class="signup_section">
+            <div class="signin_button" onclick="switchToLogin()">Login</div>
+            <div class="large_title">Explore & Experience</div>
+            <div class="small_title">Get onto your most comfortable journey yet. All the way up.</div>
+            <form id="signupForm">
+                <div class="name_flex">
+                    <input type="text" id="signupFirstName" name="signupFirstName" placeholder="First Name"
+                        required><br>
+                    <input type="text" id="signupLastName" name="signupLastName" placeholder="Last Name" required><br>
+                </div>
+                <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required><br>
+                <input type="text" id="signupUserName" name="signupUserName" placeholder="Username" required><br>
+                <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required><br>
+                <input type="password" id="signupConfirmPassword" name="signupConfirmPassword"
+                    placeholder="Confirm Password" required><br>
+                <button type="button" class="submit_button" onclick="validateForm()">GET STARTED</button>
+            </form>
+            <form id="LoginForm">
+                <input type="text" id="loginUserName" name="loginUserName" placeholder="Username" required><br>
+                <input type="password" id="LoginPassword" name="LoginPassword" placeholder="Password" required><br>
+                <button type="button" class="submit_button" onclick="login()">Login</button>
+                <div onclick="switchToSignup()" class="register">No Registered? Click here to Sigup </div>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

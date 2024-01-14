@@ -1,0 +1,13 @@
+To the run the application, follow the steps mention below:
+
+1) Install the required Node.js modules by running the command "npm install express cors body-parser mysql" in the terminal.
+
+2) Run the Node.js server with the command "node app.js" in the terminal.
+
+3) Open the html page "index.html"
+
+Note: I have commented the part where data is stored in Mysql database because you have to configure the database by adding the desired credentials for a local database server.
+
+Note: I have created a local object to store userdate to run the application in case sql connection is not made.
+
+Note: check the port in "script.js" in case your "app.js" server runs on a different port.
